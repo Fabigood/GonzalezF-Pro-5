@@ -22,21 +22,21 @@
                     <Label Text="20/11/2003"/>
                 </StackLayout>
             </Frame>
+            <Frame BorderColor="Black" Padding="10" Grid.Row="1">
+                <StackLayout>
+                    <Label Text="Intereses:" FontAttributes="Bold"/>
+                    <Label Text="Fútbol y Tecnología"/>
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Black" Padding="10" Grid.Row="1" Grid.Column="1">
+                <StackLayout>
+                    <Label Text="Versión:" FontAttributes="Bold"/>
+                    <Label Text="1.0"/>
+                </StackLayout>
+            </Frame>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </Grid>
+    </StackLayout>
 
 
 
