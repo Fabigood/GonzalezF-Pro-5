@@ -10,11 +10,6 @@
             Padding="20,0"
             Spacing="25"
             VerticalOptions="Center">
-            <Image
-               Source="tun.jpeg" 
-               HeightRequest="300"
-               WidthRequest="300"
-               HorizontalOptions="Center"/>
 
             <Label
                Text="Fabio Gonzalez"
@@ -22,6 +17,12 @@
                TextColor="Black"
                HorizontalOptions="Center"
                FontAttributes="Bold"  />
+
+            <Image
+                 Source="tun.jpeg" 
+                 HeightRequest="300"
+                WidthRequest="300"
+                 HorizontalOptions="Center"/>
 
             <Button Text="Ver Chistes"
                 BackgroundColor="White"

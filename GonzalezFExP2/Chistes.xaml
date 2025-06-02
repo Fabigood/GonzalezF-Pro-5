@@ -3,10 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GonzalezFExP2.Chistes"
              Title="Chistes">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+        <Frame BackgroundColor="White"
+               BorderColor="LightGray"
+               CornerRadius="10"
+               Padding="20"
+               AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.9, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+            <Label x:Name="lblChiste"
+                   Text="Cargando chiste..."
+                   FontSize="18"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" />
+        </Frame>
+
+        <Button Text="Otro chiste"
+                BackgroundColor="White"
+                TextColor="Black"
+                CornerRadius="10"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 0.5, 50"
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                Clicked="OnOtroChisteClicked" />
+
+
+    </AbsoluteLayout>
+
 </ContentPage>
