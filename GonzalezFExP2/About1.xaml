@@ -8,24 +8,36 @@
               ColumnDefinitions="*,*"
               ColumnSpacing="15"
               RowSpacing="15">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+            <Frame BorderColor="Black" Padding="10">
+                <StackLayout>
+                    <Label Text="Nombre:" FontAttributes="Bold"/>
+                    <Label Text="Fabio Gonzalez"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black" Padding="10" Grid.Column="1">
+                <StackLayout>
+                    <Label Text="Fecha:" FontAttributes="Bold"/>
+                    <Label Text="20/11/2003"/>
+                </StackLayout>
+            </Frame>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </ContentPage>
