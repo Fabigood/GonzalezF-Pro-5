@@ -15,6 +15,24 @@ public partial class Chistes : ContentPage
 
     private async void CargarChiste()
     {
+        try
+        {
+            var url = "https://official-joke-api.appspot.com/random_joke";
+            var chiste = await _httpClient.GetFromJsonAsync<Joke>(url);
+
+            if (chiste != null)
+            {
+                lblChiste.Text = $"{chiste.Setup}\n\n{chiste.Punchline}";
+            }
+            else
+            {
+                lblChiste.Text = "No se pudo cargar el chiste.";
+            }
+        }
+        catch
+        {
+            lblChiste.Text = "Error al obtener el chiste.";
+        }
     }
 
     private void OnOtroChisteClicked(object sender, EventArgs e)
