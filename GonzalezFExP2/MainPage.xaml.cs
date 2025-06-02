@@ -9,17 +9,15 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnVerChistesClicked(object sender, EventArgs e)
         {
-            count++;
+            await Navigation.PushAsync(new Chistes());
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void OnAcercaDeClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new About1());
         }
     }
-
 }
+
