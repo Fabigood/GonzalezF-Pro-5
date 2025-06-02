@@ -2,33 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GonzalezFExP2.About1"
-             Title="About1">
+             Title="About1"
+             BackgroundColor="Gray">
     <StackLayout Padding="20" VerticalOptions="Center">
         <Grid RowDefinitions="Auto,Auto"
               ColumnDefinitions="*,*"
               ColumnSpacing="15"
               RowSpacing="15">
 
-            <Frame BorderColor="Black" Padding="10">
+            <Frame BorderColor="White" Padding="10">
                 <StackLayout>
                     <Label Text="Nombre:" FontAttributes="Bold"/>
                     <Label Text="Fabio Gonzalez"/>
                 </StackLayout>
             </Frame>
 
-            <Frame BorderColor="Black" Padding="10" Grid.Column="1">
+            <Frame BorderColor="White" Padding="10" Grid.Column="1">
                 <StackLayout>
                     <Label Text="Fecha:" FontAttributes="Bold"/>
                     <Label Text="20/11/2003"/>
                 </StackLayout>
             </Frame>
-            <Frame BorderColor="Black" Padding="10" Grid.Row="1">
+            <Frame BorderColor="White" Padding="10" Grid.Row="1">
                 <StackLayout>
                     <Label Text="Intereses:" FontAttributes="Bold"/>
                     <Label Text="Fútbol y Tecnología"/>
                 </StackLayout>
             </Frame>
-            <Frame BorderColor="Black" Padding="10" Grid.Row="1" Grid.Column="1">
+            <Frame BorderColor="White" Padding="10" Grid.Row="1" Grid.Column="1">
                 <StackLayout>
                     <Label Text="Versión:" FontAttributes="Bold"/>
                     <Label Text="1.0"/>
